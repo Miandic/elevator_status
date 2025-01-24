@@ -1,0 +1,17 @@
+{
+  "name": "liftwin",
+  "version": "1.0.0",
+  "description": "LMAO WTH is this ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "memes"
+  ],
+  "author": "Miandic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
