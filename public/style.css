@@ -1,39 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #0078D4;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-  }
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0078D4;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.lifts-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Для мобильных устройств позволяет переносить элементы */
+  padding: 20px;
+  gap: 20px;
+}
+
+.lift {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lift-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lift-status {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Медиа-запрос для экранов шириной менее 768px */
+@media (max-width: 768px) {
   .lifts-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
+    flex-direction: column; /* Ставим элементы в колонку */
+    align-items: center;    /* Выравниваем по центру */
   }
-  
+
   .lift {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Занимаем почти всю ширину экрана */
+    max-width: 300px; /* Лимитируем ширину */
   }
-  
-  .lift-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .lift-status {
-    margin-top: 10px;
-    color: #555;
-  }
-  
+}
