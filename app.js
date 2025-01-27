@@ -24,7 +24,7 @@ app.get('/api/lift-status', (req, res) => {
     res.json(lifts);
 });
 
-app.post('/api/lift-status', (req, res) => {
+app.post('/api/lift-status-set', (req, res) => {
     const { id, status } = req.body;
 
     if (!id || !status) {
